@@ -1,0 +1,53 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap');
+.container{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Outfit', sans-serif;}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative; /* Add this for relative positioning */
+  }
+  
+  .link {
+    text-decoration: none;
+    color: #fff; /* Add a text color, adjust as needed */
+    position: relative;
+  }
+  
+  .link::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: #88e5b6;
+    transition: width 0.3s ease;
+  }
+  
+  .link:hover::before {
+    width: 100%;
+  }
+  
+
+.logout{
+  position: relative;
+  padding: 9px 12px;
+  border-radius: 19px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  background-color: #53c28b;
+}
+

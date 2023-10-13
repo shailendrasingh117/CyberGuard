@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500&family=Pathway+Extreme:opsz,wght@8..144,600&display=swap');
+
+.container{
+    gap: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.item{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.title{
+    font-weight: 1000;
+    font-family: 'Pathway Extreme', sans-serif;
+    font-size: 75px;
+    background: linear-gradient(to bottom, #194c33, #bbb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.img{
+    border-radius: 1000px;
+    height: 500px;
+    object-fit: cover;
+    animation: move 3s infinite ease alternate;
+}
+
+@keyframes move {
+    from {
+      transform: translateY(-10px);
+    }
+    to {
+      transform: translateY(10px);
+    }
+  }
+
+.desc{
+    font-size: 22px;
+    font-weight: 300;
+}
+
